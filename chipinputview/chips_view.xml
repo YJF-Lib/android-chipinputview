@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="25dp"
+    android:background="@drawable/chip_background"
+    android:paddingRight="@dimen/padding_small">
+
+    <RelativeLayout
+        android:id="@+id/layout_icon_wrapper"
+        android:layout_width="25dp"
+        android:layout_height="25dp">
+
+        <ImageView
+            android:id="@+id/iv_ch_close"
+            android:layout_width="18dp"
+            android:layout_height="18dp"
+            android:layout_centerInParent="true"
+            android:background="@drawable/right_ad_close"
+            android:gravity="center" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/tv_ch_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="@dimen/padding_small"
+        android:layout_toRightOf="@id/layout_icon_wrapper"
+        android:singleLine="true"
+        android:textSize="@dimen/font_h5" />
+
+    <ImageView
+        android:id="@+id/iv_ch_error"
+        android:layout_width="18dp"
+        android:layout_height="18dp"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="@dimen/padding_small"
+        android:layout_toRightOf="@id/tv_ch_name"
+        android:src="@drawable/send_fail_nor"
+        android:visibility="gone" />
+</RelativeLayout>
